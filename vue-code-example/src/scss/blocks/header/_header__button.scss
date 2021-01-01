@@ -1,0 +1,28 @@
+.header__button {
+    color: #fff;
+    padding: 12px;
+    position: relative;
+    text-decoration: none;
+
+    @at-root &:hover {
+        color: #fff;
+    }
+
+    @at-root &:before {
+        content: '';
+        display: none;
+        position: absolute;
+        left: 0;
+        // bottom: 0;
+        height: 80%;
+        width: 100%;
+        background-color: #ffffff26;
+        border-radius: 50px;
+        bottom: 50%;
+        transform: translateY(50%);
+    }
+
+    @at-root &:hover:before {
+        display: block;
+    }
+}

@@ -1,0 +1,38 @@
+//Import sections
+@import 'sections/hero';
+
+//Import blocks
+@import 'blocks/header/header';
+@import 'blocks/link/link';
+@import 'blocks/button/button';
+
+//Import BS for grid
+@import "node_modules/bootstrap/scss/bootstrap";
+
+
+
+// Grid breakpoint modifications
+// $grid-breakpoints: (
+//   xs: 0,
+//   sm: 375px,
+//   md: 768px,
+//   l: 992px,
+//   ll: 1200px,
+//   lg: 1440px,
+//   xl: 1920px);
+
+// Grid containers
+// $container-max-widths: (
+//   xs: 100%,
+//   sm: 540px,
+//   md: 608px,
+//   l: 960px,
+//   ll: 1140px,
+//   lg: 1178px,
+//   xl: 1464px);
+
+
+
+body {
+    margin: 0;
+}

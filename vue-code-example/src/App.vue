@@ -1,20 +1,22 @@
 <template>
-  <HeaderComponent msg="airbnb clone"/>
+  <section class="hero">
+    <div class="container">
+      <HeaderComponent msg="airbnb clone" />
+    </div>
+  </section>
 </template>
 
 <script>
-import HeaderComponent from './components/HeaderComponent.vue'
+import HeaderComponent from "./components/HeaderComponent.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HeaderComponent
-  }
-}
+    HeaderComponent,
+  },
+};
 </script>
 
 <style lang="scss">
-
-@import './scss/app.scss';
-
+@import "./scss/app.scss";
 </style>

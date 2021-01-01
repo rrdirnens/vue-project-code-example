@@ -1,0 +1,10 @@
+.header__link {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 12px;
+
+    @at-root &:hover {
+        color: #fff;
+        opacity: .7;
+    }
+}

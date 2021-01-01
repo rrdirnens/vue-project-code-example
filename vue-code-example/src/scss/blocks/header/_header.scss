@@ -1,0 +1,12 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+@import 'header--sticky';
+@import 'header__link';
+@import 'header__button';
+@import 'header__right';
+@import 'header__center';
