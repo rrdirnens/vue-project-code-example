@@ -1,0 +1,11 @@
+.header__user-panel-link {
+    color: rgba(0, 0, 0, 0.692);
+    text-decoration: none;
+    padding: 7px 20px;
+    width: 100%;
+
+    @at-root &:hover {
+        background-color: rgba(0, 0, 0, 0.025);
+        color: #000;
+    }
+}

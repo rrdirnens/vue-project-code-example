@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 20px 0;
 }
 
 
@@ -9,4 +10,10 @@
 @import 'header__link';
 @import 'header__button';
 @import 'header__right';
+@import 'header__left';
 @import 'header__center';
+@import 'header__account-hamburger';
+@import 'header__account-user-icon';
+@import 'header__user-panel';
+@import 'header__user-panel-divider';
+@import 'header__user-panel-link';

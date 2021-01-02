@@ -1,0 +1,16 @@
+.hamburger-toggle--open {
+
+    .hamburger-toggle__line:first-child {
+        transform: rotate(135deg);
+        position: relative;
+        top: 5px;
+    }
+    .hamburger-toggle__line:nth-child(2) {
+        display: none;
+    }
+    .hamburger-toggle__line:nth-child(3) {
+        transform: rotate(45deg);
+        position: relative;
+        top: -5px;
+    }
+}
