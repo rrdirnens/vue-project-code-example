@@ -2,9 +2,33 @@
     color: #fff;
     text-decoration: none;
     padding: 0 12px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    position: relative;
+
+    @at-root &:before {
+        display: none;
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        height: 2px;
+        background-color: #fff;
+        transition: width .1s;
+    }
+
+    @at-root &:hover:before {
+        display: block;
+        width: 3px;
+    }
+
+    @at-root &:focus:before {
+        display: block;
+        width: 20%;
+    }
 
     @at-root &:hover {
         color: #fff;
-        opacity: .7;
+        opacity: .8;
     }
 }

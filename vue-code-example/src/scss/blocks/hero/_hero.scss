@@ -1,0 +1,9 @@
+.hero {
+    display: flex;
+    height: 100%;
+}
+
+@import 'hero__left';
+@import 'hero__right';
+@import 'hero__title';
+@import 'hero__button'

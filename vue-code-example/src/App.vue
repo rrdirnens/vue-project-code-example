@@ -1,18 +1,21 @@
 <template>
-  <section class="hero">
+  <section class="hero-section">
     <div class="container">
-      <HeaderComponent msg="airbnb clone" />
+      <HeaderComponent/>
+      <HeroComponent/>
     </div>
   </section>
 </template>
 
 <script>
 import HeaderComponent from "./components/HeaderComponent.vue";
+import HeroComponent from "./components/HeroComponent.vue";
 
 export default {
   name: "App",
   components: {
     HeaderComponent,
+    HeroComponent
   },
 };
 </script>

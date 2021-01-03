@@ -29,7 +29,7 @@
           ></path>
         </svg>
       </a>
-      <button v-on:click="hamburgerToggle()" class="header__account-hamburger">
+      <button class="header__account-hamburger">
         <div
           :class="{ 'hamburger-toggle--open': hamburger }"
           class="hamburger-toggle hamburger-toggle--header"
@@ -70,23 +70,14 @@
 <script>
 export default {
   name: "HeaderComponent",
-  props: {
-    msg: String,
-  },
   data() {
     return {
-      hamburger: true,
+      hamburger: false,
     };
   },
 
   methods: {
-    hamburgerToggle() {
-      if (this.hamburger == true) {
-        this.hamburger = false;
-      } else {
-        this.hamburger = true;
-      }
-    },
+
   },
 
   created() {
@@ -94,16 +85,17 @@ export default {
     document.addEventListener(
       "click",
       function (event) {
-        if (self.hamburger == true) {
-          if (event.target.matches('.header__account-hamburger')) {
+        if (self.hamburger === true) {
+          if (event.target.matches('.header__account-hamburger') || !event.target.closest(".header__user-panel")) {
+            console.log(event)
             console.log('closing hamburger')
-            return false;
-          } 
-          // if ( event.target.matches(".header__account-hamburger") || !event.target.closest(".header__user-panel")) {
-          //   self.hamburger = false;
-          // }
-        } else if (event.target.matches(".header__account-hamburger") || !event.target.closest(".header__user-panel")) {
-          self.hamburger = false
+            self.hamburger = false
+          }
+        } else if (self.hamburger == false){
+          if (event.target.matches('.header__account-hamburger')) {
+            console.log('opening hamburger')
+            self.hamburger = true
+          }
         }
       },
       false
