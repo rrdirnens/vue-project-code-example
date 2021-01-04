@@ -2,7 +2,7 @@
 <div class="hero">
   <div class="hero__left">
     <div class="hero__title">Go <br>Near</div>
-    <a href="" class="button hero__button">Explore nearby stays</a>
+    <a href="javascript:;" class="button hero__button">Explore nearby stays</a>
   </div>
   <div class="hero__right"></div>
 </div>

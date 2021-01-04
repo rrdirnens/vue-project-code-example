@@ -4,6 +4,8 @@
 
 //Import sections
 @import 'sections/hero-section';
+@import 'sections/cities-section';
+@import 'sections/home-categories-section';
 
 //Import blocks
 @import 'blocks/header/header';
@@ -11,6 +13,9 @@
 @import 'blocks/link/link';
 @import 'blocks/button/button';
 @import 'blocks/hamburger-toggle/hamburger-toggle';
+@import 'blocks/cities/cities';
+@import 'blocks/home-categories/home-categories';
+@import 'blocks/section-title/section-title';
 
 //Import BS for grid
 @import "node_modules/bootstrap/scss/bootstrap";

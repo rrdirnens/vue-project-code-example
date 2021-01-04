@@ -1,0 +1,11 @@
+.home-categories__single {
+    display: flex;
+    flex-direction: column;
+    width: 23.5%;
+    margin: 0 1.5% 0 0;
+    text-decoration: none;
+
+    @at-root &:hover {
+        opacity: .8;
+    }
+}

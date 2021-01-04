@@ -1,0 +1,10 @@
+.cities {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@import 'cities__single';
+@import 'cities__image';
+@import 'cities__card-body';
+@import 'cities__name';
+@import 'cities__drive-time';

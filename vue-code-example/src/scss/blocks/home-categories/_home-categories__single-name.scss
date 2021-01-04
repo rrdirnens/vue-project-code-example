@@ -1,0 +1,12 @@
+.home-categories__single-name {
+    color: #000;
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;
+
+    @at-root &:hover {
+        color: #000;
+    }
+}

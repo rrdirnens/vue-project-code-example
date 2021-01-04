@@ -1,0 +1,10 @@
+.home-categories {
+    display: flex;
+    flex-direction: column;
+}
+
+@import 'home-categories__list';
+@import 'home-categories__single-image';
+@import 'home-categories__single-name';
+@import 'home-categories__single';
+@import 'home-categories__title';

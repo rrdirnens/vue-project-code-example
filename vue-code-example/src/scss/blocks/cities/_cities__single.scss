@@ -1,0 +1,13 @@
+.cities__single {
+    display: flex;
+    height: 64px;
+    width: 24%;
+    margin: 8px 0;
+    text-decoration: none; 
+    margin-right: 1%;
+
+    @at-root &:hover {
+        background-color: #d8d8d84a;
+        border-radius: 15px;
+    }
+}
