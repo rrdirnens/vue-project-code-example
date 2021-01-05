@@ -15,6 +15,11 @@
       <HomeCategoriesComponent/>
     </div>
   </section>
+  <section class="online-experiences-section">
+    <div class="container">
+      <OnlineExperiencesComponent/>
+    </div>
+  </section>
 </template>
 
 <script>
@@ -22,6 +27,7 @@ import HeaderComponent from "./components/HeaderComponent.vue";
 import HeroComponent from "./components/HeroComponent.vue";
 import CitiesComponent from "./components/CitiesComponent.vue";
 import HomeCategoriesComponent from "./components/HomeCategoriesComponent.vue";
+import OnlineExperiencesComponent from "./components/OnlineExperiencesComponent.vue";
 
 export default {
   name: "App",
@@ -29,7 +35,8 @@ export default {
     HeaderComponent,
     HeroComponent, 
     CitiesComponent,
-    HomeCategoriesComponent
+    HomeCategoriesComponent,
+    OnlineExperiencesComponent
   },
 };
 </script>

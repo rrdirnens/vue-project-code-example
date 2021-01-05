@@ -1,0 +1,12 @@
+.image-card {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+
+    @at-root &:hover {
+        opacity: .9;
+    }
+}
+
+@import 'image-card__image';
+@import 'image-card__text';

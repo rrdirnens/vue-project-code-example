@@ -1,0 +1,9 @@
+.online-experiences__grid-element--three {
+    grid-column: 4/5;
+    grid-row: 1/2;
+    min-width: 0;
+
+    .image-card__image {
+        max-width: 100%;
+    }
+}

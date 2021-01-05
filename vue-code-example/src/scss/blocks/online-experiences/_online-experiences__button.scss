@@ -1,0 +1,14 @@
+.online-experiences__button {
+    color: #fff;
+    background-color: transparent;
+    padding: 5px 17px;
+    height: 40px;
+    border-radius: 8px;
+    font-family: 'Rubik', sans-serif;
+    border: 1px solid #fff;
+
+    @at-root &:hover {
+        color: #fff;
+        background: rgba(255, 255, 255, 0.137);
+    }
+}

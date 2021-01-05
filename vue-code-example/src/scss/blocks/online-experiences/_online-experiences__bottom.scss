@@ -1,0 +1,9 @@
+.online-experiences__bottom {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "online-experiences__grid-element--one online-experiences__grid-element--one online-experiences__grid-element--two online-experiences__grid-element--three"
+    "online-experiences__grid-element--one online-experiences__grid-element--one online-experiences__grid-element--four online-experiences__grid-element--four";
+    grid-gap: 16px;
+}

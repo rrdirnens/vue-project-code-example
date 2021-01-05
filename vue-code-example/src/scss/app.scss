@@ -1,11 +1,12 @@
 //Fonts 
-@import url(https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;900&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;0,900;1,500&display=swap);
 
 //Import sections
 @import 'sections/hero-section';
 @import 'sections/cities-section';
 @import 'sections/home-categories-section';
+@import 'sections/online-experiences-section';
 
 //Import blocks
 @import 'blocks/header/header';
@@ -16,10 +17,11 @@
 @import 'blocks/cities/cities';
 @import 'blocks/home-categories/home-categories';
 @import 'blocks/section-title/section-title';
+@import 'blocks/online-experiences/online-experiences';
+@import 'blocks/image-card/image-card';
 
 //Import BS for grid
 @import "node_modules/bootstrap/scss/bootstrap";
-
 
 
 // Grid breakpoint modifications
