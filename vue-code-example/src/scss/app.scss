@@ -7,6 +7,8 @@
 @import 'sections/cities-section';
 @import 'sections/home-categories-section';
 @import 'sections/online-experiences-section';
+@import 'sections/hosts-section';
+@import 'sections/inspirations-section';
 
 //Import blocks
 @import 'blocks/header/header';
@@ -19,6 +21,8 @@
 @import 'blocks/section-title/section-title';
 @import 'blocks/online-experiences/online-experiences';
 @import 'blocks/image-card/image-card';
+@import 'blocks/hosts/hosts';
+@import 'blocks/inspirations/inspirations';
 
 //Import BS for grid
 @import "node_modules/bootstrap/scss/bootstrap";

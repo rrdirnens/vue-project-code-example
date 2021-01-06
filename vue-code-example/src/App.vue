@@ -20,6 +20,16 @@
       <OnlineExperiencesComponent/>
     </div>
   </section>
+  <section class="hosts-section">
+    <div class="container">
+      <HostsComponent/>
+    </div>
+  </section>
+  <section class="inspirations-section">
+    <div class="container">
+      <InspirationsComponent/>
+    </div>
+  </section>
 </template>
 
 <script>
@@ -28,6 +38,8 @@ import HeroComponent from "./components/HeroComponent.vue";
 import CitiesComponent from "./components/CitiesComponent.vue";
 import HomeCategoriesComponent from "./components/HomeCategoriesComponent.vue";
 import OnlineExperiencesComponent from "./components/OnlineExperiencesComponent.vue";
+import HostsComponent from "./components/HostsComponent.vue";
+import InspirationsComponent from "./components/InspirationsComponent.vue";
 
 export default {
   name: "App",
@@ -36,8 +48,10 @@ export default {
     HeroComponent, 
     CitiesComponent,
     HomeCategoriesComponent,
-    OnlineExperiencesComponent
-  },
+    OnlineExperiencesComponent,
+    HostsComponent,
+    InspirationsComponent
+  }
 };
 </script>
 
