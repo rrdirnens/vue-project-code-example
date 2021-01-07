@@ -30,6 +30,11 @@
       <InspirationsComponent/>
     </div>
   </section>
+  <section class="footer-section">
+    <div class="container">
+      <FooterComponent/>
+    </div>
+  </section>
 </template>
 
 <script>
@@ -40,6 +45,7 @@ import HomeCategoriesComponent from "./components/HomeCategoriesComponent.vue";
 import OnlineExperiencesComponent from "./components/OnlineExperiencesComponent.vue";
 import HostsComponent from "./components/HostsComponent.vue";
 import InspirationsComponent from "./components/InspirationsComponent.vue";
+import FooterComponent from "./components/FooterComponent.vue";
 
 export default {
   name: "App",
@@ -50,7 +56,8 @@ export default {
     HomeCategoriesComponent,
     OnlineExperiencesComponent,
     HostsComponent,
-    InspirationsComponent
+    InspirationsComponent,
+    FooterComponent
   }
 };
 </script>

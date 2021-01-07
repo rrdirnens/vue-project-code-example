@@ -9,6 +9,7 @@
 @import 'sections/online-experiences-section';
 @import 'sections/hosts-section';
 @import 'sections/inspirations-section';
+@import 'sections/footer-section';
 
 //Import blocks
 @import 'blocks/header/header';
@@ -23,6 +24,7 @@
 @import 'blocks/image-card/image-card';
 @import 'blocks/hosts/hosts';
 @import 'blocks/inspirations/inspirations';
+@import 'blocks/footer/footer';
 
 //Import BS for grid
 @import "node_modules/bootstrap/scss/bootstrap";

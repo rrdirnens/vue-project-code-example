@@ -24,202 +24,103 @@
           Popular destinations
         </a>
       </div>
-      <div class="inspirations__tab-panes">
+      <div v-if="!citiesApi.loading && !citiesApi.errored" class="inspirations__tab-panes">
         <div
           id="tab-1"
           class="inspirations__tab-panes-single inspirations__tab-panes-single--active"
         >
-          tab content 1
-        </div>
-        <div id="tab-2" class="inspirations__tab-panes-single">
           <ul class="inspirations__tab-values-list">
-            <li class="inspirations__tab-values-single">
+            <li
+              v-for="(place, index) in groupArtsAndCulture"
+              :key="index"
+              class="inspirations__tab-values-single"
+            >
               <a
-                href="javascript:;"
+                :href="place.flag"
+                target="_blank"
                 class="inspirations__tab-values-single-link"
               >
-                <div class="inspirations__tab-values-single-top">New York</div>
-                <div class="inspirations__tab-values-single-bottom">
-                  New York
+                <div class="inspirations__tab-values-single-top">
+                  {{ place.name }}
                 </div>
-              </a>
-            </li>
-            <li class="inspirations__tab-values-single">
-              <a
-                href="javascript:;"
-                class="inspirations__tab-values-single-link"
-              >
-                <div class="inspirations__tab-values-single-top">New York</div>
                 <div class="inspirations__tab-values-single-bottom">
-                  New York
-                </div>
-              </a>
-            </li>
-            <li class="inspirations__tab-values-single">
-              <a
-                href="javascript:;"
-                class="inspirations__tab-values-single-link"
-              >
-                <div class="inspirations__tab-values-single-top">New York</div>
-                <div class="inspirations__tab-values-single-bottom">
-                  New York
-                </div>
-              </a>
-            </li>
-            <li class="inspirations__tab-values-single">
-              <a
-                href="javascript:;"
-                class="inspirations__tab-values-single-link"
-              >
-                <div class="inspirations__tab-values-single-top">New York</div>
-                <div class="inspirations__tab-values-single-bottom">
-                  New York
-                </div>
-              </a>
-            </li>
-            <li class="inspirations__tab-values-single">
-              <a
-                href="javascript:;"
-                class="inspirations__tab-values-single-link"
-              >
-                <div class="inspirations__tab-values-single-top">New York</div>
-                <div class="inspirations__tab-values-single-bottom">
-                  New York
-                </div>
-              </a>
-            </li>
-            <li class="inspirations__tab-values-single">
-              <a
-                href="javascript:;"
-                class="inspirations__tab-values-single-link"
-              >
-                <div class="inspirations__tab-values-single-top">New York</div>
-                <div class="inspirations__tab-values-single-bottom">
-                  New York
-                </div>
-              </a>
-            </li>
-            <li class="inspirations__tab-values-single">
-              <a
-                href="javascript:;"
-                class="inspirations__tab-values-single-link"
-              >
-                <div class="inspirations__tab-values-single-top">New York</div>
-                <div class="inspirations__tab-values-single-bottom">
-                  New York
-                </div>
-              </a>
-            </li>
-            <li class="inspirations__tab-values-single">
-              <a
-                href="javascript:;"
-                class="inspirations__tab-values-single-link"
-              >
-                <div class="inspirations__tab-values-single-top">New York</div>
-                <div class="inspirations__tab-values-single-bottom">
-                  New York
-                </div>
-              </a>
-            </li>
-            <li class="inspirations__tab-values-single">
-              <a
-                href="javascript:;"
-                class="inspirations__tab-values-single-link"
-              >
-                <div class="inspirations__tab-values-single-top">New York</div>
-                <div class="inspirations__tab-values-single-bottom">
-                  New York
-                </div>
-              </a>
-            </li>
-            <li class="inspirations__tab-values-single">
-              <a
-                href="javascript:;"
-                class="inspirations__tab-values-single-link"
-              >
-                <div class="inspirations__tab-values-single-top">New York</div>
-                <div class="inspirations__tab-values-single-bottom">
-                  New York
-                </div>
-              </a>
-            </li>
-            <li class="inspirations__tab-values-single">
-              <a
-                href="javascript:;"
-                class="inspirations__tab-values-single-link"
-              >
-                <div class="inspirations__tab-values-single-top">New York</div>
-                <div class="inspirations__tab-values-single-bottom">
-                  New York
-                </div>
-              </a>
-            </li>
-            <li class="inspirations__tab-values-single">
-              <a
-                href="javascript:;"
-                class="inspirations__tab-values-single-link"
-              >
-                <div class="inspirations__tab-values-single-top">New York</div>
-                <div class="inspirations__tab-values-single-bottom">
-                  New York
-                </div>
-              </a>
-            </li>
-            <li class="inspirations__tab-values-single">
-              <a
-                href="javascript:;"
-                class="inspirations__tab-values-single-link"
-              >
-                <div class="inspirations__tab-values-single-top">New York</div>
-                <div class="inspirations__tab-values-single-bottom">
-                  New York
-                </div>
-              </a>
-            </li>
-            <li class="inspirations__tab-values-single">
-              <a
-                href="javascript:;"
-                class="inspirations__tab-values-single-link"
-              >
-                <div class="inspirations__tab-values-single-top">New York</div>
-                <div class="inspirations__tab-values-single-bottom">
-                  New York
-                </div>
-              </a>
-            </li>
-            <li class="inspirations__tab-values-single">
-              <a
-                href="javascript:;"
-                class="inspirations__tab-values-single-link"
-              >
-                <div class="inspirations__tab-values-single-top">New York</div>
-                <div class="inspirations__tab-values-single-bottom">
-                  New York
-                </div>
-              </a>
-            </li>
-            <li class="inspirations__tab-values-single">
-              <a
-                href="javascript:;"
-                class="inspirations__tab-values-single-link"
-              >
-                <div class="inspirations__tab-values-single-top">New York</div>
-                <div class="inspirations__tab-values-single-bottom">
-                  New York
+                  {{ place.capital }}
                 </div>
               </a>
             </li>
           </ul>
         </div>
+        <div id="tab-2" class="inspirations__tab-panes-single">
+          <ul class="inspirations__tab-values-list">
+            <li v-for="(place, index) in groupOutdoor" :key="index" class="inspirations__tab-values-single">
+              <a
+                :href="place.flag"
+                class="inspirations__tab-values-single-link"
+                target="_blank"
+              >
+                <div class="inspirations__tab-values-single-top">{{place.name}}</div>
+                <div class="inspirations__tab-values-single-bottom">
+                  {{place.capital}}
+                </div>
+              </a>
+            </li>
+            
+          </ul>
+        </div>
         <div id="tab-3" class="inspirations__tab-panes-single">
-          tab content 3
+          <ul class="inspirations__tab-values-list">
+            <li v-for="(place, index) in groupMountains" :key="index" class="inspirations__tab-values-single">
+              <a
+                :href="place.flag"
+                class="inspirations__tab-values-single-link"
+                target="_blank"
+              >
+                <div class="inspirations__tab-values-single-top">{{place.name}}</div>
+                <div class="inspirations__tab-values-single-bottom">
+                  {{place.capital}}
+                </div>
+              </a>
+            </li>
+          </ul>
         </div>
         <div id="tab-4" class="inspirations__tab-panes-single">
-          tab content 4
+          <ul class="inspirations__tab-values-list">
+            <li v-for="(place, index) in groupBeaches" :key="index" class="inspirations__tab-values-single">
+              <a
+                :href="place.flag"
+                class="inspirations__tab-values-single-link"
+                target="_blank"
+              >
+                <div class="inspirations__tab-values-single-top">{{place.name}}</div>
+                <div class="inspirations__tab-values-single-bottom">
+                  {{place.capital}}
+                </div>
+              </a>
+            </li>
+          </ul>
         </div>
         <div id="tab-5" class="inspirations__tab-panes-single">
-          tab content 5
+          <ul class="inspirations__tab-values-list">
+            <li v-for="(place, index) in groupPopular" :key="index" class="inspirations__tab-values-single">
+              <a
+                :href="place.flag"
+                class="inspirations__tab-values-single-link"
+                target="_blank"
+              >
+                <div class="inspirations__tab-values-single-top">{{place.name}}</div>
+                <div class="inspirations__tab-values-single-bottom">
+                  {{place.capital}}
+                </div>
+              </a>
+            </li>
+          </ul>
         </div>
+      </div>
+      <div v-if="citiesApi.errored" class="inspirations__error">
+        Couldn't retrieve data from the API, try again later
+      </div>
+      <div v-if="citiesApi.loading" class="inspirations__loading">
+        Still loading
       </div>
     </div>
   </div>
@@ -230,38 +131,49 @@ export default {
   name: "InspirationsComponent",
   data() {
     return {
-        citiesApi: {
-            errored: false,
-            loading: true,
-            info: null
-        }
+      apiInfo: null,
+      groupArtsAndCulture: [],
+      groupOutdoor: [],
+      groupMountains: [],
+      groupBeaches: [],
+      groupPopular: [],
+      citiesApi: {
+        errored: false,
+        loading: true,
+        info: null,
+      },
     };
-  },
-  methods: {
-      sortApiResponse() {
-          console.log('logged twice'+ JSON.stringify(this.info[0]))
-      }
   },
 
   mounted() {
-      this.axios({
-          method: 'get',
-          url: 'https://restcountries.eu/rest/v2/all',
-        //   headers: {
-        //       'X-Parse-Application-Id': 'RKMV5lh5wiPlMs0AwV0Jo7jP37YYIcxrbpMlGtRF', 
-        //       'X-Parse-REST-API-Key': 'VOh1PdvGRJ4VZGfScdXoOECUJUjX5gsAQwWZYjIH'
-        //   }
+    this.axios({
+      method: "get",
+      url: "https://restcountries.eu/rest/v2/all"
+    })
+      .then((response) => {
+        this.citiesApi.info = response.data;
+        let self = this;
+        response.data.forEach((e, i) => {
+          if (i <= 31) {
+            self.groupArtsAndCulture.push(e);
+          } else if (i >= 32 && i <= 63) {
+            self.groupOutdoor.push(e);
+          } else if (i >= 64 && i <= 95) {
+            self.groupMountains.push(e);
+          } else if (i >= 96 && i <= 127) {
+            self.groupBeaches.push(e);
+          } else if (i >= 128 && i <= 159) {
+            self.groupPopular.push(e);
+          }
+        });
       })
-      .then(response => {
-          this.info = response.data
-          console.log(this.info)
-          this.sortApiResponse(response.data)
+      .catch((error) => {
+        console.log(error);
+        this.citiesApi.errored = true;
       })
-      .catch(error =>{
-          console.log(error)
-          this.errored = true
-      })
-      .finally(() => this.loading = false)
+      .finally(
+        () => (this.citiesApi.loading = false)
+      );
   },
 
   created() {

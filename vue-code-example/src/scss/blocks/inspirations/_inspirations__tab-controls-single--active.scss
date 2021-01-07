@@ -1,3 +1,7 @@
 .inspirations__tab-controls-single--active {
+    color: #000!important;
 
+    @at-root &:before {
+        display: block!important;
+    }
 }
