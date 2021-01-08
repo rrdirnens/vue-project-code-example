@@ -1,0 +1,6 @@
+.header__user-panel-link--small-screen-only {
+
+    @media (min-width: 992px) {
+        display: none;
+    }
+}

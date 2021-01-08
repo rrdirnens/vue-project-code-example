@@ -1,9 +1,10 @@
-.hosts__list-item {
+.footer__currency-switch {
     color: $black;
+    margin: 0 30px 0 10px;
     text-decoration: none;
 
     @at-root &:hover {
         color: $black;
-        opacity: .9;
+        opacity: .8;
     }
 }

@@ -1,0 +1,6 @@
+.header__account-user-icon--large-screen-only {
+
+    @media (max-width: 992px) {
+        display: none;
+    }
+}

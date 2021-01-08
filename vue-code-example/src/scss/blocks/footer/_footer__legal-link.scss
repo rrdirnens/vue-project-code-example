@@ -1,11 +1,14 @@
-.footer__column-list-item-link {
+.footer__legal-link {
+    color: $black;
     text-decoration: none;
     font-family: $rubik;
-    color: $black;
+    font-size: 14px;
     font-weight: 300;
 
     @at-root &:hover {
         color: $black;
         text-decoration: underline;
+        text-decoration-color: rgba(0, 0, 0, 0.4);
+        opacity: .8;
     }
 }

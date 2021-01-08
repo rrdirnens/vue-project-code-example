@@ -1,0 +1,7 @@
+.header__user-panel-link--large-screen-only {
+
+
+    @media (max-width: 992px) {
+        display: none;
+    }
+}

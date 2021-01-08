@@ -1,6 +1,14 @@
 .hero {
     display: flex;
     height: 100%;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+    @media (max-width: 992px) {
+        padding: 160px 0 115px 0;
+    }
+
 }
 
 @import 'hero__left';

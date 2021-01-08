@@ -1,14 +1,14 @@
 .header__button {
-    color: #fff;
+    color: $white;
     padding: 12px;
     position: relative;
     text-decoration: none;
-    font-family: 'Rubik', sans-serif;
+    font-family: $rubik;
     font-weight: 300;
     font-size: 14px;
 
     @at-root &:hover {
-        color: #fff;
+        color: $white;
     }
 
     @at-root &:before {

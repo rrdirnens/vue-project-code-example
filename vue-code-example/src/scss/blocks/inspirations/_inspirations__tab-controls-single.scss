@@ -2,16 +2,16 @@
     font-size: 14px !important;
     line-height: 18px !important;
     font-weight: 600 !important;
-    font-family: 'Rubik', sans-serif;
+    font-family: $rubik;
     border-radius: 15px;
     background: transparent;
-    color: #000000a6;
+    color: $light-black;
     margin: 0 4px;
     padding: 8px 8px;
     position: relative;
 
     @at-root &:hover {
-        color: #000000;
+        color: $black;
         background: #0000000a;
     }
 
@@ -28,7 +28,7 @@
         position: absolute;
         display: none;
         height: 2px;
-        background-color: #000;
+        background-color: $black;
         width: 91%;
         bottom: -10px;
     }

@@ -3,6 +3,11 @@
     align-items: center;
     justify-content: space-between;
     padding: 20px 0;
+
+    @media (max-width: 575px) {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
 
 
@@ -17,3 +22,8 @@
 @import 'header__user-panel';
 @import 'header__user-panel-divider';
 @import 'header__user-panel-link';
+@import 'header__user-panel-link--small-screen-only';
+@import 'header__user-panel-link--large-screen-only';
+@import 'header__account-user-icon--large-screen-only';
+@import 'header__button--large-screen-only';
+@import 'header--sticky-on';

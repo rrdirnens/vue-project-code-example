@@ -2,7 +2,7 @@
     background-color: #222222;
     height: 76px;
     min-height: 76px;
-    color: #fff;
+    color: $white;
     display: flex;
     justify-content: flex-start;
     border-bottom-left-radius: 15px;
@@ -10,6 +10,6 @@
     padding: 16px;
     font-size: 16px;
     line-height: 20px;
-    font-family: 'Rubik', sans-serif;
+    font-family: $rubik;
     font-weight: 500;
 }
