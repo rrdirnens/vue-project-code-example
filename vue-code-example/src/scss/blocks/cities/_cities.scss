@@ -1,6 +1,10 @@
 .cities {
     display: flex;
     flex-wrap: wrap;
+
+    @media (max-width: 480px) {
+        justify-content: center;
+    }
 }
 
 @import 'cities__single';

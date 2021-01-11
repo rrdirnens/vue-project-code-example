@@ -6,4 +6,9 @@
     .image-card__image {
         max-width: 100%;
     }
+
+    @media (max-width: 480px) {
+        grid-column: 1/5;
+        grid-row: 4/5;
+    }
 }

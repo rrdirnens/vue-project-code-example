@@ -1,3 +1,7 @@
 .hosts-section {
     padding: 70px 0 30px 0;
+
+    @media (max-width: 768px) {
+        padding-top: 30px;
+    }
 }

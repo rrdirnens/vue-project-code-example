@@ -12,4 +12,8 @@
     line-height: 20px;
     font-family: $rubik;
     font-weight: 500;
+
+    @media (max-width: 768px) {
+        height: unset;
+    }
 }

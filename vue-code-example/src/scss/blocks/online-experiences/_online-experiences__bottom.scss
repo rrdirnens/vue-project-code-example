@@ -3,7 +3,16 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: "online-experiences__grid-element--one online-experiences__grid-element--one online-experiences__grid-element--two online-experiences__grid-element--three"
-    "online-experiences__grid-element--one online-experiences__grid-element--one online-experiences__grid-element--four online-experiences__grid-element--four";
+    // grid-template-areas: "online-experiences__grid-element--one online-experiences__grid-element--one online-experiences__grid-element--two online-experiences__grid-element--two"
+    // "online-experiences__grid-element--three online-experiences__grid-element--three online-experiences__grid-element--four online-experiences__grid-element--four";
     grid-gap: 16px;
+
+
+    @media (max-width: 480px) {
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    @media (max-width: 992px) {
+        margin-bottom: 16px;
+    }
 }

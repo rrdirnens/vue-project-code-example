@@ -1,3 +1,7 @@
 .cities-section {
     padding: 65px 0;
+
+    @media (max-width: 480px) {
+        padding: 27px 0 0 0;
+    }
 }

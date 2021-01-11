@@ -8,11 +8,10 @@
           Online Experiences for the Holidays
         </div>
         <div class="online-experiences__sub">
-          Interactive activities we can do together, led by one-of-a-kind
-          <br />hosts.
+          Interactive activities we can do together, led by one-of-a-kind hosts.
         </div>
       </div>
-      <a href="javascript:;" class="button online-experiences__button"
+      <a href="javascript:;" class="button online-experiences__button online-experiences__button--large-screens-only"
         >Explore all</a
       >
     </div>
@@ -34,6 +33,9 @@
         </div>
       </a>
     </div>
+    <a href="javascript:;" class="button online-experiences__button online-experiences__button--small-screens-only"
+        >Explore all</a
+      >
   </div>
 </template>
 
@@ -44,7 +46,7 @@ export default {
     return {
       experiences: [
         {
-          etext: "Enjoy Santa stories with a children’s<br>book author",
+          etext: `Enjoy Santa stories with a children’s book author`,
           eimg: "santa.jpg",
           eclass: "online-experiences__grid-element--one",
         },

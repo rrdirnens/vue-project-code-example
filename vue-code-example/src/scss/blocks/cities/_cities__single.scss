@@ -10,4 +10,12 @@
         background-color: #d8d8d84a;
         border-radius: 15px;
     }
+
+    @media (max-width: 992px) {
+        width: 49%;
+    }
+
+    @media (max-width: 480px) {
+        width: 80%;
+    }
 }

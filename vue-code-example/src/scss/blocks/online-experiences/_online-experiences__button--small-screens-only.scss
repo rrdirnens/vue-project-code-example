@@ -1,0 +1,7 @@
+.online-experiences__button--small-screens-only {
+    display: none;
+
+    @media (max-width: 992px) {
+        display: flex;
+    }
+}
