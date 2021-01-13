@@ -1,4 +1,13 @@
 .hero__right {
     display: flex;
     flex: 1;
+    padding-bottom: 100px;
+
+    @media (max-width: 575px) {
+        padding-left: 20px;
+    }
+
+    @media (min-width: 1200px){
+        padding-top: 200px;
+    }
 }

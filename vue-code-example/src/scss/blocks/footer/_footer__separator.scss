@@ -7,4 +7,9 @@
     @media (max-width: 992px) {
         margin: 6px 0;
     }
+
+    @media (max-width: 480px) {
+        background-color: transparent;
+        margin: 2px 0;
+    }
 }

@@ -1,11 +1,13 @@
 <template>
   <div class="header header--sticky">
     <div class="header__left">
-      <img
+      <a href="/">
+        <img
         src="../../src/assets/logo.png"
         alt="Company logo"
         class="header__logo"
       />
+      </a>
     </div>
     <div class="header__center">
       <a href="javascript:;" class="link header__link">Places to stay</a>
