@@ -1,0 +1,14 @@
+.quiz__finish-option  {
+    cursor: pointer;
+    background: #000;
+    color: #fff;
+    padding: 20px 40px;
+    text-align: center;
+    font-family: $rubik;
+    font-size: 16px;
+    font-weight: 500;
+
+    @at-root &:hover {
+        background-color: #434343;
+    }
+}

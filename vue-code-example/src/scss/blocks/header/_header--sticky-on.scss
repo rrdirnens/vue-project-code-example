@@ -5,6 +5,7 @@
     max-width: 1320px;
     left: 50%;
     transform: translate(-50%, 0);
+    z-index: 9;
 
     @at-root &:before {
         display: none;

@@ -5,16 +5,25 @@
     border-radius: 15px;
 }
 
-.next-panel {
-    cursor: pointer;
-    background: $black;
-    color: $white;
-    padding: 20px;
-}
-
-.answer {
-    cursor: pointer;
-    background: rgb(158, 155, 155);
-    color: $black;
-    padding: 20px;
-}
+@import 'quiz__panel';
+@import 'quiz__close';
+@import 'quiz__finish-message';
+@import 'quiz__finish';
+@import 'quiz__next';
+@import 'quiz__question-answer-text';
+@import 'quiz__question-answer';
+@import 'quiz__question-answers';
+@import 'quiz__question-text';
+@import 'quiz__question-wrapper';
+@import 'quiz__question';
+@import 'quiz__retake';
+@import 'quiz__start';
+@import 'quiz__start-opening-text';
+@import 'quiz__question-answer--selected';
+@import 'quiz__finish-options';
+@import 'quiz__finish-option';
+@import 'quiz__thanks';
+@import 'quiz__progress-percent';
+@import 'quiz__progress-tracker';
+@import 'quiz__progress-progress';
+@import 'quiz__tracking';
