@@ -1,0 +1,15 @@
+.button__magic {
+    font-family: $rubik;
+    font-size: 22px;
+    font-weight: 500;
+    color: #ffffff54;
+    background-color: #6398ad;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+
+    @at-root &:hover {
+        color: $white;
+        background-color: #00000028;
+    }
+}

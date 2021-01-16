@@ -3,6 +3,10 @@
     height: 100%;
     background-color: $white;
     border-radius: 15px;
+
+    @media (max-width: 1200px) {
+        display: none;
+    }
 }
 
 @import 'quiz__panel';
@@ -27,3 +31,5 @@
 @import 'quiz__progress-tracker';
 @import 'quiz__progress-progress';
 @import 'quiz__tracking';
+@import 'quiz__next--active';
+@import 'quiz__start-button';

@@ -1,12 +1,15 @@
 <template>
-  <div class="quiz">
+  <div class="magic" v-show="!showQuiz">
+    <div class="button button__magic" @click="showQuiz = true">Show me the magic</div>
+  </div>
+  <div class="quiz" v-show="showQuiz">
     <div v-if="quizPanelCurrent == 0" class="quiz__panel quiz__start">
       <div class="quiz__start-opening-text">
         We've prepared a short quiz for you, which will let you know your
         earning potential for your property. Would you like to proceed?
       </div>
 
-      <div @click="changePanel()" class="quiz__next">Let's go</div>
+      <div @click="changePanel()" class="quiz__start-button">Let's go</div>
     </div>
 
     <div
@@ -19,15 +22,15 @@
         v-if="quizPanelCurrent == index + 1"
         class="quiz__panel quiz__question"
       >
-      <div class="quiz__tracking">
-        <div class="quiz__progress-percent">{{ progress }}%</div>
-        <div class="quiz__progress-tracker">
-          <div
-            class="quiz__progress-progress"
-            :style="{ width: userProgress + '%' }"
-          ></div>
+        <div class="quiz__tracking">
+          <div class="quiz__progress-percent">{{ progress }}%</div>
+          <div class="quiz__progress-tracker">
+            <div
+              class="quiz__progress-progress"
+              :style="{ width: userProgress + '%' }"
+            ></div>
+          </div>
         </div>
-      </div>
         <div class="quiz__question-text">{{ question.question }}</div>
         <div class="quiz__question-answers">
           <div
@@ -58,29 +61,20 @@
       </div>
       <div class="quiz__thanks">You're all done! Thanks for participating.</div>
 
-      <div v-if="quizScore >= 0 && quizScore < 10" class="quiz__finish-message">
-        Your score is {{ quizScore }}, which means you're a bit of a dummy
+      <div v-if="quizScore >= 0 && quizScore < 15" class="quiz__finish-message">
+        Your score is {{ quizScore }}. This is pretty low and we would recommend to get your score up to at least 15 if you want to make a competitive profit.
       </div>
       <div
-        v-else-if="quizScore >= 10 && quizScore < 25"
+        v-else-if="quizScore >= 15 && quizScore < 30"
         class="quiz__finish-message"
       >
-        Your score is {{ quizScore }}, which means you're not entirely stupid
+        Your score is {{ quizScore }}. This score means that you can are going to make an average amount of profit. Try to get your score up to 30-40 if you want to make the most out of your property.
       </div>
       <div
-        v-else-if="quizScore >= 25 && quizScore < 50"
+        v-else-if="quizScore >= 30 && quizScore <= 40"
         class="quiz__finish-message"
       >
-        Your score is {{ quizScore }}, which means you're almost intelligent
-      </div>
-      <div
-        v-else-if="quizScore >= 50 && quizScore < 75"
-        class="quiz__finish-message"
-      >
-        Your score is {{ quizScore }}, which means you're probably not exactly a
-        rocket scientist, but among the other dummies, you're doing pretty good
-        and should be proud of yourself. Like the r-worded kid they bring out
-        during half time, to shoot a three-pointer.
+        Your score is {{ quizScore }}. Congrats, you are in a good position to make the most profit out of your property.
       </div>
 
       <div class="quiz__finish-options">
@@ -107,59 +101,145 @@ export default {
 
   data() {
     return {
+      showQuiz: false,
       quizData: [
         {
           question: "How many pets do you have on your property?",
           answers: {
             option1: {
               text: "None",
-              points: 50,
+              points: 5,
             },
             option2: {
-              text: "1-5",
+              text: "I have 1-3 pets",
               points: 2,
             },
             option3: {
               text:
-                "I am offended by the question and would like to speak to the manager",
-              points: 3,
+                "I have more than 3 pets",
+              points: 0,
             },
           },
         },
         {
-          question: "When is the question?",
+          question: "How many months of the year is your property available?",
           answers: {
             option1: {
-              text: "I don't know",
-              points: 1,
+              text: "10-12 months",
+              points: 5,
             },
             option2: {
-              text: "I do know",
+              text: "3-10 months",
               points: 2,
             },
             option3: {
               text:
-                "I am offended by the question and would like to speak to the manager",
-              points: 3,
+                "Less than 3 months",
+              points: 0,
             },
           },
         },
         {
-          question: "When is the question?",
+          question: "What's the average lowest temperature where your property is located?",
           answers: {
             option1: {
-              text: "I don't know",
-              points: 1,
+              text: "It's ever below freezing",
+              points: 5,
             },
             option2: {
-              text: "I do know",
+              text: "A little below freezing",
               points: 2,
             },
             option3: {
               text:
-                "I am offended by the question and would like to speak to the manager",
-              points: 3,
+                "Unbearable level of cold",
+              points: 0,
             },
+          },
+        },
+        {
+          question: "How many separate bedrooms does your property have?",
+          answers: {
+            option1: {
+              text: "More than 5",
+              points: 5,
+            },
+            option2: {
+              text: "Between 2-5",
+              points: 2,
+            },
+            option3: {
+              text:
+                "1",
+              points: 0,
+            },
+          },
+        },
+        {
+          question: "How many bathrooms does your property have per bedroom?",
+          answers: {
+            option1: {
+              text: "1 or more",
+              points: 5,
+            },
+            option2: {
+              text: "Less than 1 but more than 0.5",
+              points: 2,
+            },
+            option3: {
+              text:
+                "Less than 0.5",
+              points: 0,
+            },
+          },
+        },
+        {
+          question: "What's the average hottest temperature where your property is located?",
+          answers: {
+            option1: {
+              text: "Higher than 30 degrees Celsius",
+              points: 5,
+            },
+            option2: {
+              text: "Between 20 and 30 degrees Celsius",
+              points: 2,
+            },
+            option3: {
+              text:
+                "Less than 20 degrees Celsius",
+              points: 0,
+            },
+          },
+        },
+        {
+          question: "Does your property have heating and hot water?",
+          answers: {
+            option1: {
+              text: "Yes to both",
+              points: 5,
+            },
+            option2: {
+              text: "Has heating but no hot water",
+              points: 2,
+            },
+            option3: {
+              text:
+                "Has hot water, but no heating",
+              points: 0,
+            },
+          },
+        },
+        {
+          question: "Does your property have free Wi-Fi for tennants?",
+          answers: {
+            option1: {
+              text: "Yes",
+              points: 5,
+            },
+            option2: {
+              text: "No",
+              points: 0,
+            }
           },
         },
       ],
@@ -188,8 +268,10 @@ export default {
       //Check if it's the closing quiz panel AND the user selects the "Back to browsing"
       if (self.quizPanelCurrent == last && action == "back") {
         // console.log('backk')
-        self.quizScore = null;
-        self.quizScoreCurrent = null;
+        self.quizPanelCurrent = 0
+        self.showQuiz = false
+        self.quizScore = null
+        self.quizScoreCurrent = null
 
         //Check if it's the closing quiz panel AND the user selects the "Retake the quiz"
       } else if (self.quizPanelCurrent == last && action == "again") {
@@ -200,6 +282,7 @@ export default {
 
         //Run this when the user submits and answer
       } else {
+        // console.log('changing panel now')
         self.quizPanelCurrent += 1;
         self.quizScore += self.quizScoreCurrent;
         self.quizScoreCurrent = null;
@@ -211,7 +294,10 @@ export default {
       let answers = document.querySelectorAll(".quiz__question-answer");
       let target = event.currentTarget;
       let targetClass = "quiz__question-answer--selected";
+      let next = document.querySelector(".quiz__next");
+      let nextClass = "quiz__next--active";
 
+      next.classList.remove(nextClass);
       //Loop through all answers and remove the '--selected' modifier
       answers.forEach((a) => {
         a.classList.remove(targetClass);
@@ -219,6 +305,7 @@ export default {
 
       //Add the '--selected' modifier to the selected answer
       target.classList.add(targetClass);
+      next.classList.add(nextClass);
 
       //Check if a score for the current question has been registered.
       //If it's not registered, the just add the score
@@ -230,6 +317,8 @@ export default {
         this.quizScoreCurrent = null;
         this.quizScoreCurrent += points;
       }
+
+      // console.log('inside updateScore    ' + document.querySelector(".quiz__question-answer--selected"))
     },
   },
   computed: {
